@@ -16,8 +16,10 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
+
 	//Create the Bodies Here.
 
+	bob1= new Bob(200,20,20)
 
 	Engine.run(engine);
   
@@ -27,7 +29,7 @@ function setup() {
 function draw() {
   rectMode(CENTER);
   background(0);
-  
+  bob1.display();
   drawSprites();
  
 }
